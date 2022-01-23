@@ -1,0 +1,8 @@
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\Imms\Imms\bin\Debug\Imms.exe.config
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\Imms\Imms\bin\Debug\Imms.exe
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\Imms\Imms\bin\Debug\Imms.pdb
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\Imms\Imms\obj\Debug\Imms.csproj.AssemblyReference.cache
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\Imms\Imms\obj\Debug\Imms.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\Imms\Imms\obj\Debug\Imms.csproj.CoreCompileInputs.cache
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\Imms\Imms\obj\Debug\Imms.exe
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\Imms\Imms\obj\Debug\Imms.pdb

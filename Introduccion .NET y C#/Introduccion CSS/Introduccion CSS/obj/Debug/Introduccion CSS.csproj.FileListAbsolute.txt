@@ -1,0 +1,8 @@
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\Introduccion CSS\Introduccion CSS\obj\Debug\Introduccion CSS.csproj.AssemblyReference.cache
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\Introduccion CSS\Introduccion CSS\obj\Debug\Introduccion CSS.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\Introduccion CSS\Introduccion CSS\obj\Debug\Introduccion CSS.csproj.CoreCompileInputs.cache
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\Introduccion CSS\Introduccion CSS\bin\Debug\Introduccion CSS.exe.config
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\Introduccion CSS\Introduccion CSS\bin\Debug\Introduccion CSS.exe
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\Introduccion CSS\Introduccion CSS\bin\Debug\Introduccion CSS.pdb
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\Introduccion CSS\Introduccion CSS\obj\Debug\Introduccion CSS.exe
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\Introduccion CSS\Introduccion CSS\obj\Debug\Introduccion CSS.pdb

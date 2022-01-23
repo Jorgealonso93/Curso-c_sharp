@@ -1,0 +1,8 @@
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\pruebas\pruebas\bin\Debug\pruebas.exe.config
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\pruebas\pruebas\bin\Debug\pruebas.exe
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\pruebas\pruebas\bin\Debug\pruebas.pdb
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\pruebas\pruebas\obj\Debug\pruebas.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\pruebas\pruebas\obj\Debug\pruebas.csproj.CoreCompileInputs.cache
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\pruebas\pruebas\obj\Debug\pruebas.exe
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\pruebas\pruebas\obj\Debug\pruebas.pdb
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\pruebas\pruebas\obj\Debug\pruebas.csproj.AssemblyReference.cache
