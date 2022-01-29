@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8f87a413-33ad-42ed-8fb7-28527eb5b290": {
+      "ProjectGuid": "8f87a413-33ad-42ed-8fb7-28527eb5b290",
+      "DisplayName": "CRUDEstatusWF",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

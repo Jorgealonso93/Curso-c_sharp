@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "fe9c75bd-2394-4c94-abe7-d0230d0af9f1": {
+      "ProjectGuid": "fe9c75bd-2394-4c94-abe7-d0230d0af9f1",
+      "DisplayName": "HolaWinForms",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

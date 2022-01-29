@@ -1,0 +1,11 @@
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\CRUDEstatusAlumnos\CRUDEstatusAlumnos\bin\Debug\CRUDEstatusAlumnos.exe.config
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\CRUDEstatusAlumnos\CRUDEstatusAlumnos\bin\Debug\CRUDEstatusAlumnos.exe
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\CRUDEstatusAlumnos\CRUDEstatusAlumnos\bin\Debug\CRUDEstatusAlumnos.pdb
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\CRUDEstatusAlumnos\CRUDEstatusAlumnos\obj\Debug\CRUDEstatusAlumnos.csproj.AssemblyReference.cache
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\CRUDEstatusAlumnos\CRUDEstatusAlumnos\obj\Debug\CRUDEstatusAlumnos.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\CRUDEstatusAlumnos\CRUDEstatusAlumnos\obj\Debug\CRUDEstatusAlumnos.CrudEstatus.resources
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\CRUDEstatusAlumnos\CRUDEstatusAlumnos\obj\Debug\CRUDEstatusAlumnos.Properties.Resources.resources
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\CRUDEstatusAlumnos\CRUDEstatusAlumnos\obj\Debug\CRUDEstatusAlumnos.csproj.GenerateResource.cache
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\CRUDEstatusAlumnos\CRUDEstatusAlumnos\obj\Debug\CRUDEstatusAlumnos.csproj.CoreCompileInputs.cache
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\CRUDEstatusAlumnos\CRUDEstatusAlumnos\obj\Debug\CRUDEstatusAlumnos.exe
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\CRUDEstatusAlumnos\CRUDEstatusAlumnos\obj\Debug\CRUDEstatusAlumnos.pdb

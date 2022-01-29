@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d8390b83-6504-4c6e-8ed4-92f5fca98d1f": {
+      "ProjectGuid": "d8390b83-6504-4c6e-8ed4-92f5fca98d1f",
+      "DisplayName": "CRUDEstatusAlumnos",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
