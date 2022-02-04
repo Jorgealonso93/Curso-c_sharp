@@ -1,0 +1,2 @@
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\WCFHolaMundo\obj\Debug\WCFHolaMundo.csproj.AssemblyReference.cache
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\WCFHolaMundo\obj\Debug\WCFHolaMundo.csproj.CoreCompileInputs.cache

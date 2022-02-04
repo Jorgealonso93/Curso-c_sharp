@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFAlumno", "WCFAlumno.csproj", "{3C89C4EB-7CE1-4D0E-9ECD-4FC9424B4DBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C89C4EB-7CE1-4D0E-9ECD-4FC9424B4DBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C89C4EB-7CE1-4D0E-9ECD-4FC9424B4DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C89C4EB-7CE1-4D0E-9ECD-4FC9424B4DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C89C4EB-7CE1-4D0E-9ECD-4FC9424B4DBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DA268CC-2FD1-414F-B433-56B1D87944C3}
+	EndGlobalSection
+EndGlobal

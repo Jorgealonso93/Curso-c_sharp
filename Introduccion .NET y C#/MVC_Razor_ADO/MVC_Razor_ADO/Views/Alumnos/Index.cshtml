@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Entidades.Alumno>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<Entidades.Estado> estado = ViewBag.Estados;
+}
+
+<h2>Listado Alumnos</h2>
+<p>
+    @Html.ActionLink("Agregar", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.primerApellido)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.segunndoApellido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Correo)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.idEstado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idEstatus)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.ID)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Nombre)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.primerApellido)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.segunndoApellido)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Correo)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Telefono)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.idEstado)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.idEstatus)
+    </td>
+    <td>
+        @Html.ActionLink("Actualizar", "Edit", new { id = item.ID }) |
+        @Html.ActionLink("Consultar", "Details", new { id = item.ID }) |
+        @Html.ActionLink("Eliminar", "Delete", new { id = item.ID })
+    </td>
+</tr>
+    }
+
+</table>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="instituto_tichModelStoreContainer" CdmEntityContainer="instituto_tichEntities1">
+    <EntitySetMapping Name="alumnos">
+      <EntityTypeMapping TypeName="instituto_tichModel.alumnos">
+        <MappingFragment StoreEntitySet="alumnos">
+          <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+          <ScalarProperty Name="nombre_alumno" ColumnName="nombre_alumno" />
+          <ScalarProperty Name="primerApellido" ColumnName="primerApellido" />
+          <ScalarProperty Name="segundoApellido" ColumnName="segundoApellido" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+          <ScalarProperty Name="curp" ColumnName="curp" />
+          <ScalarProperty Name="sueldo" ColumnName="sueldo" />
+          <ScalarProperty Name="id_estado" ColumnName="id_estado" />
+          <ScalarProperty Name="id_estatus" ColumnName="id_estatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="estados">
+      <EntityTypeMapping TypeName="instituto_tichModel.estados">
+        <MappingFragment StoreEntitySet="estados">
+          <ScalarProperty Name="id_estado" ColumnName="id_estado" />
+          <ScalarProperty Name="nombre_estado" ColumnName="nombre_estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="estatus_alumnos">
+      <EntityTypeMapping TypeName="instituto_tichModel.estatus_alumnos">
+        <MappingFragment StoreEntitySet="estatus_alumnos">
+          <ScalarProperty Name="id_estatus" ColumnName="id_estatus" />
+          <ScalarProperty Name="clave" ColumnName="clave" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

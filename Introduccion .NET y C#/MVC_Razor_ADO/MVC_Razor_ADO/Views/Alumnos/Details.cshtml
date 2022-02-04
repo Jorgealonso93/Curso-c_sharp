@@ -1,0 +1,101 @@
+﻿@model Entidades.Alumno
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Alumnos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Indice", "Index")
+</p>
+
+
+
+<div class="form-horizontal">
+    <h4>Alumnos</h4>
+    <hr />
+    @Html.HiddenFor(model => model.ID)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ID, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.ID, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.LabelFor(model => model.Nombre, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.LabelFor(model => model.primerApellido, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.primerApellido, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.LabelFor(model => model.segunndoApellido, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.segunndoApellido, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.LabelFor(model => model.fechaNacimiento, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.fechaNacimiento, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.LabelFor(model => model.Curp, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Curp, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.LabelFor(model => model.Correo, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Correo, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.LabelFor(model => model.Telefono, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Telefono, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.LabelFor(model => model.idEstado, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.idEstado, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        @Html.LabelFor(model => model.idEstatus, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.idEstatus, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+
+</div>
+
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        <input type="submit" value="Guardar" class="btn btn-default" />
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Indice", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

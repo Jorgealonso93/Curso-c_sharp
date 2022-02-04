@@ -1,0 +1,13 @@
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\WCFAlumno\bin\WCFAlumno.dll.config
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\WCFAlumno\bin\WCFAlumno.dll
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\WCFAlumno\bin\WCFAlumno.pdb
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\WCFAlumno\obj\Debug\WCFAlumno.csproj.AssemblyReference.cache
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\WCFAlumno\obj\Debug\WCFAlumno.csproj.CoreCompileInputs.cache
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\WCFAlumno\obj\Debug\WCFAlumno.dll
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\WCFAlumno\obj\Debug\WCFAlumno.pdb
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\WCFAlumno\bin\Datos.dll
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\WCFAlumno\bin\Entidades.dll
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\WCFAlumno\bin\Negocio.dll
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\WCFAlumno\bin\Newtonsoft.Json.dll
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\WCFAlumno\bin\Newtonsoft.Json.xml
+C:\Users\Tichs\Documents\Desarrollo .NET\Introduccion .NET y C#\WCFAlumno\obj\Debug\WCFAlumno.csproj.CopyComplete

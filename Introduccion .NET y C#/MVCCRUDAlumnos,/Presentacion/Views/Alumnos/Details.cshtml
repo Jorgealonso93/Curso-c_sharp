@@ -1,0 +1,182 @@
+﻿@model Entidades.alumnos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>alumnos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.id_alumno)
+        </dt>
+
+        <dd id="id_alumno">
+            @Html.DisplayFor(model => model.id_alumno, new {@id ="id_alumno"})
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre_alumno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre_alumno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.primerApellido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.primerApellido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.segundoApellido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.segundoApellido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.correo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.correo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaNacimiento)
+        </dt>
+
+        <dd>
+            @if(Model.fechaNacimiento != null) { @Model.fechaNacimiento.ToString("dd/MM/yyyy")}
+            else { @Html.DisplayFor(Model => Model.fechaNacimiento)}
+            @*@Html.DisplayFor(model => model.fechaNacimiento)*@
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.curp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.curp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sueldo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sueldo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.id_estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.id_estatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_estatus)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <input type="button" id="btnImss" value="IMMS" onclick="AportacionesIMSS()" class="btn btn-primary">
+    <input type="button" id="btnIsr" value="ISR" onclick="CalcularISR()" class="btn btn-primary">
+</div>
+<div class="modal" id="myModalcliente">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Encabezado Modal -->
+            <div class="modal-header">
+                <h4 class="modal-title" id="titulo">Detalles Alumno</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Curepo de la Modal -->
+            <div class="modal-body" id="CuerpoModal">
+                CuerpoModal...
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id_alumno }) |
+    @Html.ActionLink("Regresar a la Lista", "Index")
+</p>
+
+<script type="text/javascript">
+
+    function AportacionesIMSS() {
+        var id = $("#id_alumno").text();
+        var url = "@Url.Action("_AportacionesIMMS", "Alumnos")" + "/" + id;
+        llamarAjaxModal(url, muestraModal);
+    }
+    function CalcularISR() {
+        var id = $("#id_alumno").text();
+        var url = "@Url.Action("_CalcularISR", "Alumnos")" + "/" + id;
+        llamarAjaxModal(url, muestraModal);
+    }
+    function muestraModal(response) {
+        $("#CuerpoModal").html(response);
+        $("#myModalcliente").modal("show");
+    }
+
+    function errorGenerico(jqXHR, exception) {
+        var msg = '';
+        if (jqXHR.status === 0) {
+            msg = 'No está conectado, favor de verificar su conexión.';
+        }
+        else if (jqXHR.status === 404) {
+            msg = 'Página no encontrada [404]';
+        }
+        else if (jqXHR.status === 500) {
+            msg = 'Error no hay conexión al servidor [500]';
+        }
+        else if (jqXHR.status === 'parseerror') {
+            msg = 'El parseo del JSON es erróneo.';
+        }
+        else if (jqXHR.status === 'timeout') {
+            $('body').addClass('loaded');
+        }
+        else if (jqXHR.status === 'abort') {
+            msg = 'La petición Ajax fue abortada.';
+        }
+        else {
+            msg = 'Error no conocido. ';
+            console.log(exception);
+        }
+        alert(msg);
+    }
+</script>
+
+    

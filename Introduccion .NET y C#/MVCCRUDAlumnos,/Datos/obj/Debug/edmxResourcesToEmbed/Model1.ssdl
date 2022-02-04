@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="instituto_tichModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="alumnos">
+    <Key>
+      <PropertyRef Name="id_alumno" />
+    </Key>
+    <Property Name="id_alumno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre_alumno" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="primerApellido" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="segundoApellido" Type="varchar" MaxLength="50" />
+    <Property Name="correo" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="telefono" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="fechaNacimiento" Type="date" Nullable="false" />
+    <Property Name="curp" Type="char" MaxLength="18" Nullable="false" />
+    <Property Name="sueldo" Type="decimal" Precision="9" Scale="2" Nullable="false" />
+    <Property Name="id_estado" Type="int" Nullable="false" />
+    <Property Name="id_estatus" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="estados">
+    <Key>
+      <PropertyRef Name="id_estado" />
+    </Key>
+    <Property Name="id_estado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre_estado" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="estatus_alumnos">
+    <Key>
+      <PropertyRef Name="id_estatus" />
+    </Key>
+    <Property Name="id_estatus" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="clave" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_alumnosEstado">
+    <End Role="estados" Type="Self.estados" Multiplicity="1" />
+    <End Role="alumnos" Type="Self.alumnos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estados">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="alumnos">
+        <PropertyRef Name="id_estado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_alumnosEstatus">
+    <End Role="estatus_alumnos" Type="Self.estatus_alumnos" Multiplicity="1" />
+    <End Role="alumnos" Type="Self.alumnos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estatus_alumnos">
+        <PropertyRef Name="id_estatus" />
+      </Principal>
+      <Dependent Role="alumnos">
+        <PropertyRef Name="id_estatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="instituto_tichModelStoreContainer">
+    <EntitySet Name="alumnos" EntityType="Self.alumnos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="estados" EntityType="Self.estados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="estatus_alumnos" EntityType="Self.estatus_alumnos" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_alumnosEstado" Association="Self.FK_alumnosEstado">
+      <End Role="estados" EntitySet="estados" />
+      <End Role="alumnos" EntitySet="alumnos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_alumnosEstatus" Association="Self.FK_alumnosEstatus">
+      <End Role="estatus_alumnos" EntitySet="estatus_alumnos" />
+      <End Role="alumnos" EntitySet="alumnos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

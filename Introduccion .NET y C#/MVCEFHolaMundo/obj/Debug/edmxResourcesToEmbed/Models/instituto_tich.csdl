@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="instituto_tichModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="alumnos">
+    <Key>
+      <PropertyRef Name="id_alumno" />
+    </Key>
+    <Property Name="id_alumno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_alumno" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="primerApellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="segundoApellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="correo" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telefono" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="fechaNacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="curp" Type="String" MaxLength="18" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="sueldo" Type="Decimal" Precision="9" Scale="2" Nullable="false" />
+    <Property Name="id_estado" Type="Int32" Nullable="false" />
+    <Property Name="id_estatus" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="estados" Relationship="Self.FK_alumnosEstado" FromRole="alumnos" ToRole="estados" />
+    <NavigationProperty Name="estatus_alumnos" Relationship="Self.FK_alumnosEstatus" FromRole="alumnos" ToRole="estatus_alumnos" />
+  </EntityType>
+  <EntityType Name="estados">
+    <Key>
+      <PropertyRef Name="id_estado" />
+    </Key>
+    <Property Name="id_estado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_estado" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="alumnos" Relationship="Self.FK_alumnosEstado" FromRole="estados" ToRole="alumnos" />
+  </EntityType>
+  <EntityType Name="estatus_alumnos">
+    <Key>
+      <PropertyRef Name="id_estatus" />
+    </Key>
+    <Property Name="id_estatus" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="clave" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="alumnos" Relationship="Self.FK_alumnosEstatus" FromRole="estatus_alumnos" ToRole="alumnos" />
+  </EntityType>
+  <Association Name="FK_alumnosEstado">
+    <End Role="estados" Type="Self.estados" Multiplicity="1" />
+    <End Role="alumnos" Type="Self.alumnos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estados">
+        <PropertyRef Name="id_estado" />
+      </Principal>
+      <Dependent Role="alumnos">
+        <PropertyRef Name="id_estado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_alumnosEstatus">
+    <End Role="estatus_alumnos" Type="Self.estatus_alumnos" Multiplicity="1" />
+    <End Role="alumnos" Type="Self.alumnos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estatus_alumnos">
+        <PropertyRef Name="id_estatus" />
+      </Principal>
+      <Dependent Role="alumnos">
+        <PropertyRef Name="id_estatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="instituto_tichEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="alumnos" EntityType="Self.alumnos" />
+    <EntitySet Name="estados" EntityType="Self.estados" />
+    <EntitySet Name="estatus_alumnos" EntityType="Self.estatus_alumnos" />
+    <AssociationSet Name="FK_alumnosEstado" Association="Self.FK_alumnosEstado">
+      <End Role="estados" EntitySet="estados" />
+      <End Role="alumnos" EntitySet="alumnos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_alumnosEstatus" Association="Self.FK_alumnosEstatus">
+      <End Role="estatus_alumnos" EntitySet="estatus_alumnos" />
+      <End Role="alumnos" EntitySet="alumnos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

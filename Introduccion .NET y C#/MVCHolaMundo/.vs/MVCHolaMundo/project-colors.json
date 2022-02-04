@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9dfd1c15-5abe-4e76-ab3a-48b4b6b57b6c": {
+      "ProjectGuid": "9dfd1c15-5abe-4e76-ab3a-48b4b6b57b6c",
+      "DisplayName": "MVCHolaMundo",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}
